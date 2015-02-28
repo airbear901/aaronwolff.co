@@ -1,0 +1,86 @@
+<?php 
+$page_title = 'Aaron Wolff';
+$page_style_href = 'css/style.css';
+include 'includes/header.php';
+
+// $price = array (
+// 	'lillies' => 3.5,
+// 	'roses' => 930
+// );
+// $color = array (
+// 	'lillies' => "pink",
+// 	'roses' => "red"
+// ); 
+?>
+
+
+<!-- <div class="hero-image">
+	<span>Some things I've done.</span>
+</div> -->
+<div class="container">
+	<div class="col-xs-12">
+	<img src="/img/logo.png" id="logo">
+	<!-- <h1>Some things I've done.</h1> -->
+
+	</div>
+<div class="container-fluid">
+	<div class="row">
+		<!-- <div id="links"> -->
+			<div class="col-md-3 col-sm-6">
+				<a href="/travels/new_zealand" title="New Zealand">
+					<img src="/img/home_new_zealand.jpg" alt="">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<a href="/travels/patagonia" title="Patagonia">
+					<img src="/img/home_patagonia1.jpg" alt="">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<a href="https://drive.google.com/folderview?id=0B9MFUnCySGgNZ082SnphRHdUS00&usp=sharing" title="Panama">
+					<img src="/img/home_panama1.jpg" alt="">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6">
+			<a href="http://s347.photobucket.com/user/aaronwolff/library/India?sort=3&albumview=grid&page=1" title="India">
+				<img src="/img/home_india.jpg" alt="">
+			</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<a href="/travels/israel" title="Israel">
+					<img src="/img/home_israel1.jpg" alt="">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<a href="https://drive.google.com/folderview?id=0B9MFUnCySGgNWTdTQVNsWlF6ZGc&usp=sharing" title="Europe">
+					<img src="/img/home_europe.jpg" alt="">
+				</a>
+			</div>
+			<!-- <div class="col-md-3 col-sm-6">
+				<a href="/travels/newzealand" title="New Zealand">
+					<img src="/img/home_new_zealand1.jpg" alt="">
+				</a>
+			</div> -->
+			<div class="col-md-3 col-sm-6">
+				<a href="https://drive.google.com/folderview?id=0B9MFUnCySGgNSUxVTV93MEF2eVU&usp=sharing" title="National Parks">
+					<img src="/img/home_national_park.jpg" alt="">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<a href="https://teachforamerica.org" title="Teach for America">
+					<img src="/img/tfa.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+				
+			
+
+	
+		    
+</div>
+</div> <!-- container -->
+</body>
+</html>
