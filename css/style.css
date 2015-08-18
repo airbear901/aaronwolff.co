@@ -325,7 +325,7 @@ table {
 	max-height:418px;
 }
 
-#logo {
+.logo {
 	min-height: 100px;
 	max-height: 146px;
 	min-width: 110px;
@@ -409,6 +409,10 @@ table {
     margin-bottom: 20px;*/
 
 }
+
+.hover-image img:last-child{display:none;}
+.hover-image:hover img:first-child{display:none;}
+.hover-image:hover img:last-child{display:inline-block;}
 
 #sub-name {
     padding-top: 0px;

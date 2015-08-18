@@ -3,36 +3,17 @@ $page_title = 'Aaron Wolff';
 $page_style_href = 'css/style.css';
 $page_script_src = 'js/script.js';
 include 'includes/header.php'; 
+include_once("analyticstracking.php");
 ?>
 
- <script>
- //  $(function() {
- //    $( document ).tooltip({
- //      items: "img, [data-geo], [title]",
- //      content: function() {
- //        var element = $( this );
- //        if ( element.is( "[data-geo]" ) ) {
- //          var text = element.text();
- //          return "<img class='map' alt='" + text +
- //            "' src='http://maps.google.com/maps/api/staticmap?" +
- //            "zoom=11&size=350x350&maptype=terrain&sensor=false&center=" +
- //            text + "'>";
- //        }
- //        if ( element.is( "[title]" ) ) {
- //          return element.attr( "title" );
- //        }
- //        if ( element.is( "img" ) ) {
- //          return element.attr( "alt" );
- //        }
- //      }
- //    });
- //  });
- </script>
 
 <div class="container">
 	<div class="row" style="margin-top: 35px;margin-bottom: 30px;">
 		<div class="col-xs-4" id="header-image">
-			<img src="/img/logo.png" class="img-responsive" id="logo">
+			<div class="hover-image">
+				<img src="img/logo.png" class="img-responsive logo">
+				<img src="img/headshot.jpg" class="img-responsive img-circle logo">
+			</div>
 		</div>
 		<div class="col-xs-8" id="header-text">
 			<div id="header-content">
@@ -44,7 +25,7 @@ include 'includes/header.php';
 </div>
 <div class="flip" id="chalkfly">
 	<div  style="padding:0px" class="hero wrap">
-		<img src="/img/team-standing.png" style="width:100%;" >
+		<img src="img/team-standing.png" style="width:100%;" >
 		<div class="text_over_image">
 			<h1>CHALKFLY</h1>
 		</div>
@@ -67,7 +48,7 @@ include 'includes/header.php';
 
 <div class="flip" id="teachforamerica">
 	<div  style="padding:0px" class="hero wrap">
-			<img src="/img/tfa_class.png" style="width:100%; margin-top:10px;" >	
+			<img src="img/tfa_class.png" style="width:100%; margin-top:10px;" >	
 			<div class="text_over_image" id="tfa">
 				<h1>TEACH FOR AMERICA</h1>
 			</div>
@@ -86,7 +67,7 @@ include 'includes/header.php';
 
 <div class="flip" id="travel">
 	<div  style="padding:0px" class="hero wrap">
-		<img src="/img/travel.png" style="width:100%; margin-top:10px;" >
+		<img src="img/travel.png" style="width:100%; margin-top:10px;" >
 		<div class="text_over_image">
 			<h1>TRAVEL</h1>
 		</div>	
@@ -96,14 +77,23 @@ include 'includes/header.php';
 	<h2>Israel, Jordan, Ukraine | 2015</h2>
 	<h2><a class="test-popup-link" href="https://vimeo.com/88222227">New Zealand (Video) | 2014</a></h2>
 	<h2><a class="patagonia-popup" href="img/patagonia-popup.jpg">Patagonia | 2013</a></h2>
-	<h2>Panama | 2012</h2>
+	<h2>
+		<div class="gallery">
+		    <a class="gallery-item" href="img/panama/panama1.JPG" title="Coffee Country">Panama | 2012</a>
+		    <a class="gallery-item" href="img/panama/panama2.JPG" title="Lost and Found Hostel"></a>
+		    <a class="gallery-item" href="img/panama/panama3.JPG" title="Miraflores Locks"></a>
+		    <a class="gallery-item" href="img/panama/panama4.JPG" title="Caf&eacute;"></a>
+		    <a class="gallery-item" href="img/panama/panama5.JPG" title="Don Cune's Caf&eacute;"></a>
+		</div>
+	</h2>
 	<h2>India | 2008</h2>
+	
 	
 </div>
 
 <div class="flip" id="education">
 	<div  style="padding:0px" class="hero wrap">
-		<img src="/img/msu.png" style="width:100%; margin-top:10px;" >	
+		<img src="img/msu.png" style="width:100%; margin-top:10px;" >	
 		<div class="text_over_image">
 			<h1>EDUCATION</h1>
 		</div>	
@@ -111,7 +101,7 @@ include 'includes/header.php';
 </div>
 <div class="panel" id="education-panel">
 	<h2>B.A. International Relations | Michigan State University | 2010</h2>	
-	<h2>Study Abroad: Golbalization in South Asia | Chennai, India | 2008</h2>
+	<h2>Study Abroad: Globalization in South Asia | Chennai, India | 2008</h2>
 	<h2>Emergency Medical Technician | Lansing Community College | 2010</h2>
 	<h2>Patagonia Mountaineering | The National Outdoor Leadership School | 2012</h2>
 </div>
@@ -137,6 +127,18 @@ include 'includes/header.php';
 <script src="../../js/jquery.magnific-popup.js"></script>
 <script>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60296115-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+
 $('body').flowtype({
    minimum   : 300,
    maximum   : 1100,
@@ -160,14 +162,6 @@ $('#tfa').flowtype({
    maxFont   : 30,
    fontRatio : 40
 });
-
-// $('ul li').flowtype({
-//    minimum   : 300,
-//    maximum   : 1500,
-//    minFont   : 16,
-//    maxFont   : 20,
-//    fontRatio : 30
-// });
 
 $('#name').flowtype({
    minimum   : 300,
@@ -205,6 +199,27 @@ $('.patagonia-popup').magnificPopup({
 
 });
 
+
+// This will create a single gallery from all elements that have class "gallery-item"
+$('.gallery-item').magnificPopup({
+  type: 'image',
+  gallery:{
+    
+    enabled:true,
+
+    preload: [0,2],
+
+    navigateByImgClick: true,
+
+  arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+
+  tPrev: 'Previous (Left arrow key)', // title for left button
+  tNext: 'Next (Right arrow key)', // title for right button
+  tCounter: '<span class="mfp-counter">%curr% of %total%</span>' // markup of counter
+
+  }
+
+});
 
 </script>
 
