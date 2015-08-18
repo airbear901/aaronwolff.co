@@ -7,7 +7,7 @@
 	<title><?php echo $page_title; ?></title>
 	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 	<!-- bootstrap -->
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<link rel="apple-touch-icon-precomposed" href="/logo_iphone.png"/>
